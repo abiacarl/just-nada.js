@@ -1,0 +1,1 @@
+one-to-many relationship (https://laravel.com/docs/10.x/eloquent-relationships#one-to-many)
