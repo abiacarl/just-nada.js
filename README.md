@@ -1,4 +1,4 @@
-## About just-nada.js
+## just-nada.js
 
 The script that does absolutely nothing. Document and design your database in javascript.
 
@@ -7,6 +7,33 @@ The script that does absolutely nothing. Document and design your database in ja
 - Repeat.
 
 That's it!
+
+## Structure
+
+``` javascript
+export  class  MyClass  extends  Base {
+	model = 'My';
+	columns = {};
+	relationships = {};
+}
+```
+
+## Example
+
+``` javascript
+export  class  UserClass  extends  Base {
+	model = 'User';
+
+	columns = {
+		id: 'integer',
+		name: 'string'
+	};
+
+	relationships = {
+		roles: this.belongsToMany(RoleClass)
+	};
+}
+```
 
 ## Contributing
 
